@@ -6,26 +6,36 @@ for (let i = 1; i <= 100; i++){
 
 
     if (multiploQuindici === 0){
-        let numberElement = document.getElementById("number")
+        let numberElement = document.getElementById('number')
         let iNumber = i + ' FizzBuzz'
         numberElement.innerHTML = iNumber
-        console.log (iNumber)
-        console.log(i,'FizzBuzz')
+        console.log (numberElement.innerHTML, 'ciao')
+        // console.log ('il console log di iNumber ', iNumber)
+        // console.log(i,'FizzBuzz')
         
     }
     else if (multiploCinque === 0){
-        console.log (i, 'Buzz')
-        // let numberElement = document.getElementById("number")
-        // numberElement.innerHTML = i + 'Buzz'
+        let numberElement = document.getElementById('number')
+        let iNumber = i + ' Buzz'
+        numberElement.innerHTML = iNumber
+        console.log (numberElement.innerHTML, 'ciao')
+        // console.log ('il console log di iNumber ', iNumber)
+        // console.log (i, 'Buzz')
     }
     else if (multiploTre === 0){
-        console.log(i , 'Fizz')
-        // let numberElement = document.getElementById("number")
-        // numberElement.innerHTML = i + 'Fizz'
+        let numberElement = document.getElementById('number')
+        let iNumber = i + ' Fizz'
+        numberElement.innerHTML = iNumber
+        console.log (numberElement.innerHTML, 'ciao')
+        // console.log ('il console log di iNumber ', iNumber)
+        // console.log(i , 'Fizz')
     }
     else {
-        console.log(i)
-        // let numberElement = document.getElementById("number")
-        // numberElement.innerHTML = i 
+        let numberElement = document.getElementById('number')
+        let iNumber = i 
+        numberElement.innerHTML = iNumber
+        console.log (numberElement.innerHTML, 'ciao')
+        // console.log ( 'il console log di iNumber ', iNumber)
+        // console.log(i)
     }
 }
