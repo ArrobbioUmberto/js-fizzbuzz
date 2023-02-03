@@ -6,21 +6,21 @@ for (let i = 1; i <= 100; i++){
     let numberElement = document.getElementById('numberelement')
 
     if (multiploQuindici == 0){
-        let iNumber = '<h1>' + i + ' FizzBuzz' + '</h1>'
+        let iNumber = '<h1>'+'FizzBuzz'+ '</h1>'
         numberElement.innerHTML += iNumber
-        console.log(i, 'FizzBuzz')
+        // console.log(i, 'FizzBuzz')
     }
     else if (multiploCinque === 0){
-        let iNumber = '<h1>' + i + ' Buzz' + '</h1>'
+        let iNumber = '<h1>'+'Buzz'+ '</h1>' 
         numberElement.innerHTML += iNumber
-        console.log(i, 'Buzz')
+        // console.log(i, 'Buzz')
     }else if (multiploTre === 0){
-        let iNumber = '<h1>' + i + ' Fizz' + '</h1>'
+        let iNumber = '<h1>'+'Fizz'+ '</h1>'
         numberElement.innerHTML += iNumber
-        console.log(i, 'Fizz')
+        // console.log(i, 'Fizz')
      }else {
-        let iNumber = '<h1>' + i + '</h1>'
+        let iNumber =  '<h1>'+ i + '</h1>'
         numberElement.innerHTML += iNumber
-        console.log(i)
+        // console.log(i)
     }
 }
