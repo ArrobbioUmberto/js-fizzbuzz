@@ -3,21 +3,24 @@ for (let i = 1; i <= 100; i++){
     const multiploCinque = i % 5
     const multiploTre = i % 3
     
-    if (multiploQuindici === 0){
+    let numberElement = document.getElementById('numberelement')
+
+    if (multiploQuindici == 0){
+        let iNumber = '<h1>' + i + ' FizzBuzz' + '</h1>'
+        numberElement.innerHTML += iNumber
         console.log(i, 'FizzBuzz')
-        let iNumber = '<h1>'+ i + 'Fizzbuzz' + '</h1>'
-        document.write( iNumber)
-    }else if (multiploCinque === 0){
-        console.log (i, 'Buzz')
+    }
+    else if (multiploCinque === 0){
         let iNumber = '<h1>' + i + ' Buzz' + '</h1>'
-        document.write( iNumber)
+        numberElement.innerHTML += iNumber
+        console.log(i, 'Buzz')
     }else if (multiploTre === 0){
-        console.log (i, 'Fizz')
         let iNumber = '<h1>' + i + ' Fizz' + '</h1>'
-        document.write( iNumber)
+        numberElement.innerHTML += iNumber
+        console.log(i, 'Fizz')
      }else {
-        console.log (i)
-        let iNumber = '<h1>' + i  + '</h1>'
-        document.write( iNumber)
+        let iNumber = '<h1>' + i + '</h1>'
+        numberElement.innerHTML += iNumber
+        console.log(i)
     }
 }
